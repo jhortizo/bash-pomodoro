@@ -20,4 +20,7 @@ echo "Installing dependencies..."
 source "$VENV_DIR/bin/activate"
 pip install -r requirements.txt
 
+echo "Creating pomodoro-counter.csv file..."
+echo "init_timestamp,end_timestamp" > "$INSTALL_DIR/pomodoro-counter.csv"
+
 echo "Installation complete! You can now run your Pomodoro scripts."
